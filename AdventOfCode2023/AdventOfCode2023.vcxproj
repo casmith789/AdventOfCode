@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +139,7 @@
     <ClInclude Include="Day6_2023.h" />
     <ClInclude Include="Day7_2023.h" />
     <ClInclude Include="Day8_2023.h" />
+    <ClInclude Include="Day9_2023.h" />
     <ClInclude Include="input_day2_2023.h" />
     <ClInclude Include="input_day3_2023.h" />
     <ClInclude Include="input_day4_2023.h" />
@@ -146,6 +148,7 @@
     <ClInclude Include="input_day5_2023.h" />
     <ClInclude Include="input_day7_2023.h" />
     <ClInclude Include="input_day8_2023.h" />
+    <ClInclude Include="input_day9_2023.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

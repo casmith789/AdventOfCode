@@ -33,5 +33,5 @@ TEST(TestDay8_2023, Test1) {
 
 TEST(TestDay8_2023, Test2) {
 	Day8_2023 day8;
-	EXPECT_EQ(day8.numSteps(Input2023::day8_LR_string, Input2023::day8_input_map, true), 12169);
+	EXPECT_EQ(day8.numSteps(Input2023::day8_LR_string, Input2023::day8_input_map, true), 12030780859469ll);
 }

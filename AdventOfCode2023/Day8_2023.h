@@ -50,7 +50,7 @@ public:
         return true;
     }
 
-    int numSteps(std::string LRstring, std::vector<std::string> input, bool secondPart)
+    int64_t numSteps(std::string LRstring, std::vector<std::string> input, bool secondPart)
     {
         std::vector<std::string> currentNodes;
         std::unordered_map<std::string, std::pair<std::string, std::string>> map = createMapFromInput(input, currentNodes);
@@ -62,8 +62,8 @@ public:
         }
         int LRstringIndex = 0;
         int index = 0;
-        std::vector<std::vector<int>> completionNums;
-        std::vector<int> empty;
+        std::vector<std::vector<int64_t>> completionNums;
+        std::vector<int64_t> empty;
         for (auto irrel : currentNodes)
         {
             completionNums.push_back(empty);
@@ -102,10 +102,12 @@ public:
                     }
                     if (foundAll)
                     {
-                        if (completionNums.size() == 6)
+                        int64_t ans = completionNums[0][0];
+                        for (int i = 1; i < completionNums.size(); ++i)
                         {
-                            return std::lcm(completionNums[0][0], completionNums[1][0], completionNums[2][0], completionNums[3][0], completionNums[4][0], completionNums[5][0]);
+                            ans = std::lcm(ans, completionNums[i][0]);
                         }
+                        return ans;
                     }
                 }
                 ++y;

@@ -2,7 +2,7 @@
 #include "Day3_2023.h"
 #include "input_day3_2023.h"
 
-TEST(TestDay3_2023, Test1)
+TEST(TestDay03_2023, Test1)
 {
 	std::vector<std::string> test_data = {
 		"467..114..",
@@ -23,7 +23,7 @@ TEST(TestDay3_2023, Test1)
 }
 
 
-TEST(TestDay3_2023, TestNoSymbols)
+TEST(TestDay03_2023, TestNoSymbols)
 {
 	std::vector<std::string> test_data = {
 		".....",
@@ -36,7 +36,7 @@ TEST(TestDay3_2023, TestNoSymbols)
 	EXPECT_EQ(ans, 0);
 }
 
-TEST(TestDay3_2023, TestTopLeft)
+TEST(TestDay03_2023, TestTopLeft)
 {
 	std::vector<std::string> test_data = {
 		"&....",
@@ -49,7 +49,7 @@ TEST(TestDay3_2023, TestTopLeft)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestTopRight)
+TEST(TestDay03_2023, TestTopRight)
 {
 	std::vector<std::string> test_data = {
 		"....*",
@@ -62,7 +62,7 @@ TEST(TestDay3_2023, TestTopRight)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestBottomRight)
+TEST(TestDay03_2023, TestBottomRight)
 {
 	std::vector<std::string> test_data = {
 		".....",
@@ -75,7 +75,7 @@ TEST(TestDay3_2023, TestBottomRight)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestBottomLeft)
+TEST(TestDay03_2023, TestBottomLeft)
 {
 	std::vector<std::string> test_data = {
 		".....",
@@ -88,7 +88,7 @@ TEST(TestDay3_2023, TestBottomLeft)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestLeft)
+TEST(TestDay03_2023, TestLeft)
 {
 	std::vector<std::string> test_data = {
 		".....",
@@ -101,7 +101,7 @@ TEST(TestDay3_2023, TestLeft)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestRight)
+TEST(TestDay03_2023, TestRight)
 {
 	std::vector<std::string> test_data = {
 		".....",
@@ -114,7 +114,7 @@ TEST(TestDay3_2023, TestRight)
 	EXPECT_EQ(ans, 467);
 }
 
-TEST(TestDay3_2023, TestFull1)
+TEST(TestDay03_2023, TestFull1)
 {
 	std::vector<std::string> test_data = Input2023::day3_input;
 	Day3_2023 day3;
@@ -122,7 +122,7 @@ TEST(TestDay3_2023, TestFull1)
 	EXPECT_EQ(ans, 520019);
 }
 
-TEST(TestDay3_2023, TestFourOneSymbol)
+TEST(TestDay03_2023, TestFourOneSymbol)
 {
 	std::vector<std::string> test_data = {
 		"....9",
@@ -135,7 +135,7 @@ TEST(TestDay3_2023, TestFourOneSymbol)
 	EXPECT_EQ(ans, 557);
 }
 
-TEST(TestDay3_2023, TestEndOfLine)
+TEST(TestDay03_2023, TestEndOfLine)
 {
 	std::vector<std::string> test_data = {
 		"...@9",
@@ -147,7 +147,7 @@ TEST(TestDay3_2023, TestEndOfLine)
 	EXPECT_EQ(ans, 9);
 }
 
-TEST(TestDay3_2023, TestStartOfLine)
+TEST(TestDay03_2023, TestStartOfLine)
 {
 	std::vector<std::string> test_data = {
 		"12*...",
@@ -159,7 +159,7 @@ TEST(TestDay3_2023, TestStartOfLine)
 	EXPECT_EQ(ans, 12);
 }
 
-TEST(TestDay3_2023, TestLastRow)
+TEST(TestDay03_2023, TestLastRow)
 {
 	std::vector<std::string> test_data = {
 		"//..~",
@@ -171,7 +171,7 @@ TEST(TestDay3_2023, TestLastRow)
 	EXPECT_EQ(ans, 3);
 }
 
-TEST(TestDay3_2023, TestFirstThree)
+TEST(TestDay03_2023, TestFirstThree)
 {
 	std::vector<std::string> test_data = {
 "..975..95..................717..........................................747................................................622..............",
@@ -184,7 +184,7 @@ TEST(TestDay3_2023, TestFirstThree)
 	EXPECT_EQ(ans, 5424);
 }
 
-TEST(TestDay3_2023, TestFindNumberOfAdjacent)
+TEST(TestDay03_2023, TestFindNumberOfAdjacent)
 {
 	std::vector<std::set<int>> test;
 	std::set<int> zero;
@@ -213,7 +213,7 @@ TEST(TestDay3_2023, TestFindNumberOfAdjacent)
 	EXPECT_EQ(numAdjacent, 4);
 }
 
-TEST(TestDay3_2023, Test2)
+TEST(TestDay03_2023, Test2)
 {
 	std::vector<std::string> test_data = {
 		"467..114..",
@@ -233,7 +233,7 @@ TEST(TestDay3_2023, Test2)
 	EXPECT_EQ(ans, 467835);
 }
 
-TEST(TestDay3_2023, TestGears2)
+TEST(TestDay03_2023, TestGears2)
 {
 	std::vector<std::string> test_data = {
 		"467..114..",
@@ -258,7 +258,7 @@ TEST(TestDay3_2023, TestGears2)
 
 
 
-TEST(TestDay3_2023, TestFull2)
+TEST(TestDay03_2023, TestFull2)
 {
 	std::vector<std::string> test_data = Input2023::day3_input;
 	Day3_2023 day3;

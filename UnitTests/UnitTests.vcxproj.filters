@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="test_day1_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day2_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day3_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day4_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day5_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day6_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day7_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day8_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day9_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day10_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day11_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day12_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day13_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day14_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day15_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day16_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day17_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day18_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day19_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day20_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day21_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day22_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day23_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day24_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day25_2023.cpp">
+      <Filter>2023</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day1_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day2_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="2023">
+      <UniqueIdentifier>{ad3bac9e-6ef1-4a7c-8bc4-50e26767132c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2022">
+      <UniqueIdentifier>{f359c0af-e24e-4ba5-b97a-23b08bfc762e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

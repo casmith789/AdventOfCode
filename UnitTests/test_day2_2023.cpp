@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Day2_2023.h"
 
-TEST(TestDay2_2023, Test1)
+TEST(TestDay02_2023, Test1)
 {
 	Day2_2023 day2;
 	EXPECT_EQ(day2.lineValue("Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green", false), 1);
@@ -14,7 +14,7 @@ TEST(TestDay2_2023, Test1)
 	EXPECT_EQ(day2.full(false), 2162);
 }
 
-TEST(TestDay2_2023, Test2)
+TEST(TestDay02_2023, Test2)
 {
 	Day2_2023 day2;
 	EXPECT_EQ(day2.lineValue("Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green", true), 48);

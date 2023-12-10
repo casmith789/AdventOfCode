@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Day1_2023.h"
 
-TEST(TestDay1_2023, Test1) {
+TEST(TestDay01_2023, Test1) {
 	Day1_2023 day1;
 	EXPECT_EQ(day1.full(false), 55386);
 
@@ -14,8 +14,7 @@ TEST(TestDay1_2023, Test1) {
 	EXPECT_EQ(day1.lineValue("7pqrstsixteen", true), 76);
 }
 
-TEST(TestDay1_2023, Test2) {
+TEST(TestDay01_2023, Test2) {
 	Day1_2023 day1;
 	EXPECT_EQ(day1.full(true), 54824);
 }
-

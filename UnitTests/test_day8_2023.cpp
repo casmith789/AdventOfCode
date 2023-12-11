@@ -2,7 +2,7 @@
 #include "Day8_2023.h"
 #include "input_day8_2023.h"
 
-TEST(TestDay8_2023, TestExamples) {
+TEST(TestDay08_2023, TestExamples) {
 	Day8_2023 day8;
 
 	std::string LRString = "RL";
@@ -26,12 +26,12 @@ TEST(TestDay8_2023, TestExamples) {
 	EXPECT_EQ(day8.numSteps(LRString, example2, false), 6);
 }
 
-TEST(TestDay8_2023, Test1) {
+TEST(TestDay08_2023, Test1) {
 	Day8_2023 day8;
 	EXPECT_EQ(day8.numSteps(Input2023::day8_LR_string, Input2023::day8_input_map, false), 12169);
 }
 
-TEST(TestDay8_2023, Test2) {
+TEST(TestDay08_2023, Test2) {
 	Day8_2023 day8;
 	EXPECT_EQ(day8.numSteps(Input2023::day8_LR_string, Input2023::day8_input_map, true), 12030780859469ll);
 }

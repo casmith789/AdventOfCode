@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Day4_2023.h"
 
-TEST(TestDay4_2023, Test1) {
+TEST(TestDay04_2023, Test1) {
 	Day4_2023 day4;
 	EXPECT_EQ(day4.lineValue("Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53", false), 8);
 	EXPECT_EQ(day4.lineValue("Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19", false), 2);
@@ -14,7 +14,7 @@ TEST(TestDay4_2023, Test1) {
 
 }
 
-TEST(TestDay4_2023, Test2) {
+TEST(TestDay04_2023, Test2) {
 	Day4_2023 day4;
 	EXPECT_EQ(day4.lineValue("Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53", true), 4);
 	EXPECT_EQ(day4.lineValue("Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19", true), 2);

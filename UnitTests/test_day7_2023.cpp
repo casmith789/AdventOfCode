@@ -2,7 +2,7 @@
 #include "Day7_2023.h"
 #include "input_day7_2023.h"
 
-TEST(TestDay7_2023, TestHandTypes) {
+TEST(TestDay07_2023, TestHandTypes) {
 	Day7_2023 day7;
 	EXPECT_EQ(day7.type("AAAAA", false), Day7_2023::FIVE_KIND);
 	EXPECT_EQ(day7.type("AA8AA", false), Day7_2023::FOUR_KIND);
@@ -21,7 +21,7 @@ TEST(TestDay7_2023, TestHandTypes) {
 	EXPECT_EQ(day7.type("J43K2", true), Day7_2023::ONE_PAIR);
 }
 
-TEST(TestDay7_2023, Example) {
+TEST(TestDay07_2023, Example) {
 	Day7_2023 day7;
 	std::vector<std::string> input = {
 	"32T3K 765",
@@ -37,14 +37,14 @@ TEST(TestDay7_2023, Example) {
 	EXPECT_EQ(res, 5905);
 }
 
-TEST(TestDay7_2023, Test1) {
+TEST(TestDay07_2023, Test1) {
 	Day7_2023 day7;
 
 	long res = day7.result(Input2023::day7_input, false);
 	EXPECT_EQ(res, 252052080);
 }
 
-TEST(TestDay7_2023, Test2) {
+TEST(TestDay07_2023, Test2) {
 	Day7_2023 day7;
 
 	long res = day7.result(Input2023::day7_input, true);

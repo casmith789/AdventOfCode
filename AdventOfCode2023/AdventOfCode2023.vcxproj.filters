@@ -19,6 +19,9 @@
     <Filter Include="Header Files\2023">
       <UniqueIdentifier>{0ec920a9-3d28-4bc2-bf1f-ed70b06605f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\2022">
+      <UniqueIdentifier>{9e51bf2b-2730-4237-a7e2-9a8377d3d3cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2023.cpp">
@@ -179,17 +182,17 @@
     <ClInclude Include="Day25_2023.h">
       <Filter>Header Files\2023</Filter>
     </ClInclude>
-    <ClInclude Include="Day1_2022.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day2_2022.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="input_day1_2022.h">
       <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day2_2022.h">
       <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2_2022.h">
+      <Filter>Header Files\2022</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1_2022.h">
+      <Filter>Header Files\2022</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

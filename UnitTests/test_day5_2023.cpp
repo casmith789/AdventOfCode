@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Day5_2023.h"
 
-TEST(TestDay5_2023, TestMapLine) {
+TEST(TestDay05_2023, TestMapLine) {
 	std::vector<std::string> testMapLines = {
 	"50 98 2",
 	"52 50 48"
@@ -27,7 +27,7 @@ TEST(TestDay5_2023, TestMapLine) {
 	EXPECT_EQ(day5.GetDestinationValForWholeMap(99, testMapLines), 51);
 }
 
-TEST(TestDay5_2023, TestAllMaps) {
+TEST(TestDay05_2023, TestAllMaps) {
 	const std::vector<std::string> test_seedInput =
 	{
 	  "79","14","55","13"
@@ -121,7 +121,7 @@ TEST(TestDay5_2023, TestAllMaps) {
 	EXPECT_EQ(day5.GetVal(13ll, Day5_2023::SEED, Day5_2023::LOCATION), 35ll);
 }
 
-TEST(TestDay5_2023, Test1)
+TEST(TestDay05_2023, Test1)
 {
 	Day5_2023 day5;
 
@@ -136,19 +136,19 @@ TEST(TestDay5_2023, Test1)
 	EXPECT_EQ(day5.full(false), 324724204ll);
 }
 
-TEST(TestDay5_2023, Test1Alternate)
+TEST(TestDay05_2023, Test1Alternate)
 {
 	Day5_2023 day5;
 	EXPECT_EQ(day5.fullAlternate(false), 324724204ll);
 }
 
-TEST(TestDay5_2023, Test2Alternate)
+TEST(TestDay05_2023, Test2Alternate)
 {
 	Day5_2023 day5;
 	EXPECT_EQ(day5.fullAlternate(true), 104070862ll);
 }
 
-TEST(TestDay5_2023, ReorderMap)
+TEST(TestDay05_2023, ReorderMap)
 {
 	Day5_2023 day5;
 	std::vector<std::string> initialMap = Input2023::day5_seed_to_soil_map;
@@ -158,7 +158,7 @@ TEST(TestDay5_2023, ReorderMap)
 	EXPECT_EQ(initialMap[19], "3525625564 3935480084 359487212");
 }
 
-TEST(TestDay5_2023, TestAllMapsCombine) {
+TEST(TestDay05_2023, TestAllMapsCombine) {
 	const std::vector<std::string> test_seedInput =
 	{
 	  "79","14","55","13"

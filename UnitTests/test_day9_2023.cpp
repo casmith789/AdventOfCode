@@ -3,7 +3,7 @@
 #include "input_day9_2023.h"
 
 
-TEST(TestDay9_2023, Test1) {
+TEST(TestDay09_2023, Test1) {
 	Day9_2023 day9;
 	EXPECT_EQ(day9.lineValue("0 3 6 9 12 15", false), 18);
 	EXPECT_EQ(day9.lineValue("1 3 6 10 15 21", false), 28);
@@ -13,7 +13,7 @@ TEST(TestDay9_2023, Test1) {
 	EXPECT_EQ(ret, 1972648895);
 }
 
-TEST(TestDay9_2023, Test2) {
+TEST(TestDay09_2023, Test2) {
 	Day9_2023 day9;
 	EXPECT_EQ(day9.lineValue("0 3 6 9 12 15", true), -3);
 	EXPECT_EQ(day9.lineValue("1 3 6 10 15 21", true), 0);

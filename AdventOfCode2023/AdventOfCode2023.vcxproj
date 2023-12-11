@@ -24,6 +24,7 @@
     <ProjectGuid>{43432d81-e942-4e15-abe5-8cf63a00e67b}</ProjectGuid>
     <RootNamespace>AdventOfCode2023</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AdventOfCode</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -104,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,6 +133,24 @@
     <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Day10_2023.h" />
+    <ClInclude Include="Day11_2023.h" />
+    <ClInclude Include="Day12_2023.h" />
+    <ClInclude Include="Day13_2023.h" />
+    <ClInclude Include="Day14_2023.h" />
+    <ClInclude Include="Day15_2023.h" />
+    <ClInclude Include="Day16_2023.h" />
+    <ClInclude Include="Day17_2023.h" />
+    <ClInclude Include="Day18_2023.h" />
+    <ClInclude Include="Day19_2023.h" />
+    <ClInclude Include="Day1_2022.h" />
+    <ClInclude Include="Day20_2023.h" />
+    <ClInclude Include="Day21_2023.h" />
+    <ClInclude Include="Day22_2023.h" />
+    <ClInclude Include="Day23_2023.h" />
+    <ClInclude Include="Day24_2023.h" />
+    <ClInclude Include="Day25_2023.h" />
+    <ClInclude Include="Day2_2022.h" />
     <ClInclude Include="Day2_2023.h" />
     <ClInclude Include="Day3_2023.h" />
     <ClInclude Include="Day4_2023.h" />
@@ -140,6 +159,24 @@
     <ClInclude Include="Day7_2023.h" />
     <ClInclude Include="Day8_2023.h" />
     <ClInclude Include="Day9_2023.h" />
+    <ClInclude Include="input_day10_2023.h" />
+    <ClInclude Include="input_day11_2023.h" />
+    <ClInclude Include="input_day12_2023.h" />
+    <ClInclude Include="input_day13_2023.h" />
+    <ClInclude Include="input_day14_2023.h" />
+    <ClInclude Include="input_day15_2023.h" />
+    <ClInclude Include="input_day16_2023.h" />
+    <ClInclude Include="input_day17_2023.h" />
+    <ClInclude Include="input_day18_2023.h" />
+    <ClInclude Include="input_day19_2023.h" />
+    <ClInclude Include="input_day1_2022.h" />
+    <ClInclude Include="input_day20_2023.h" />
+    <ClInclude Include="input_day21_2023.h" />
+    <ClInclude Include="input_day22_2023.h" />
+    <ClInclude Include="input_day23_2023.h" />
+    <ClInclude Include="input_day24_2023.h" />
+    <ClInclude Include="input_day25_2023.h" />
+    <ClInclude Include="input_day2_2022.h" />
     <ClInclude Include="input_day2_2023.h" />
     <ClInclude Include="input_day3_2023.h" />
     <ClInclude Include="input_day4_2023.h" />

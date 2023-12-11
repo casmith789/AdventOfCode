@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\inputs">
+      <UniqueIdentifier>{6a90e90a-44fb-4f56-aab9-784ad52287f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2023">
+      <UniqueIdentifier>{0ec920a9-3d28-4bc2-bf1f-ed70b06605f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2023.cpp">
@@ -23,59 +29,167 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day1_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="input_day2_2023.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="input_day1_2023.h">
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
-    <ClInclude Include="Day2_2023.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="input_day2_2023.h">
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day3_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day3_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day4_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="input_day1_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day4_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day5_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day5_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day6_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day7_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day7_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day8_2023.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Day8_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day9_2023.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day10_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day11_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day12_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day13_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day14_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day15_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day16_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day17_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day18_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day19_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day20_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day21_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day22_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day23_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day24_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day25_2023.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day5_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day6_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day8_2023.h">
+      <Filter>Header Files\2023</Filter>
     </ClInclude>
     <ClInclude Include="Day9_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day10_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day11_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day12_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day13_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day14_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day15_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day16_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day18_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day19_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day20_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day21_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day22_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day23_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day24_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day25_2023.h">
+      <Filter>Header Files\2023</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1_2022.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day1_2022.h">
+      <Filter>Header Files\inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day2_2022.h">
+      <Filter>Header Files\inputs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

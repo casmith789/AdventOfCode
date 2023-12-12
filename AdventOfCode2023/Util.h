@@ -32,6 +32,55 @@ public:
         return res;
     }
 
+    // https://stackoverflow.com/a/65920738
+    static std::string strip(const std::string& inpt)
+    {
+        auto start_it = inpt.begin();
+        auto end_it = inpt.rbegin();
+        while (std::isspace(*start_it))
+            ++start_it;
+        while (std::isspace(*end_it))
+            ++end_it;
+        return std::string(start_it, end_it.base());
+    }
 
+    // https://stackoverflow.com/a/65920738 modified
+    static std::string strip(const std::string& inpt, char toStrip)
+    {
+        bool ok = false;
+        for (char c : inpt)
+        {
+            if (c != toStrip)
+            {
+                ok = true;
+            }
+        }
+        if (!ok)
+        {
+            return "";
+        }
+        auto start_it = inpt.begin();
+        auto end_it = inpt.rbegin();
+        while (*start_it == toStrip)
+            ++start_it;
+        while (*end_it == toStrip)
+            ++end_it;
+        return std::string(start_it, end_it.base());
+    }
+
+    // https://stackoverflow.com/a/9331125
+    static int nChoosek(int n, int k)
+    {
+        if (k > n) return 0;
+        if (k * 2 > n) k = n - k;
+        if (k == 0) return 1;
+
+        int result = n;
+        for (int i = 2; i <= k; ++i) {
+            result *= (n - i + 1);
+            result /= i;
+        }
+        return result;
+    }
 };
 

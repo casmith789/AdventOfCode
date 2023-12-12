@@ -62,8 +62,11 @@
     <ClCompile Include="test_day25_2023.cpp" />
     <ClCompile Include="test_day2_2022.cpp" />
     <ClCompile Include="test_day2_2023.cpp" />
+    <ClCompile Include="test_day3_2022.cpp" />
     <ClCompile Include="test_day3_2023.cpp" />
+    <ClCompile Include="test_day4_2022.cpp" />
     <ClCompile Include="test_day4_2023.cpp" />
+    <ClCompile Include="test_day5_2022.cpp" />
     <ClCompile Include="test_day5_2023.cpp" />
     <ClCompile Include="test_day6_2023.cpp" />
     <ClCompile Include="test_day7_2023.cpp" />
@@ -108,7 +111,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories);C:\Users\Chris\source\repos\AdventOfCode2023\AdventOfCode2023</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -139,6 +142,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories);C:\Users\Chris\source\repos\AdventOfCode2023\AdventOfCode2023</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

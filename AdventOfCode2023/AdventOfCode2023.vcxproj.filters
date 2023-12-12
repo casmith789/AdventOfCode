@@ -27,7 +27,7 @@
     <ClCompile Include="AdventOfCode2023.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Util.cpp">
+    <ClCompile Include="input_day3_2022.h">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -193,6 +193,21 @@
     </ClInclude>
     <ClInclude Include="Day1_2022.h">
       <Filter>Header Files\2022</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day4_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day5_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day5_2022.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

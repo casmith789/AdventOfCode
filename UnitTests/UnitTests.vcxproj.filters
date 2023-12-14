@@ -89,7 +89,18 @@
     <ClCompile Include="test_day4_2022.cpp">
       <Filter>2022</Filter>
     </ClCompile>
-    <ClCompile Include="test_day5_2022.cpp" />
+    <ClCompile Include="test_day6_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day5_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day7_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
+    <ClCompile Include="test_day8_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

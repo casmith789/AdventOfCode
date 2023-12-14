@@ -68,8 +68,11 @@
     <ClCompile Include="test_day4_2023.cpp" />
     <ClCompile Include="test_day5_2022.cpp" />
     <ClCompile Include="test_day5_2023.cpp" />
+    <ClCompile Include="test_day6_2022.cpp" />
     <ClCompile Include="test_day6_2023.cpp" />
+    <ClCompile Include="test_day7_2022.cpp" />
     <ClCompile Include="test_day7_2023.cpp" />
+    <ClCompile Include="test_day8_2022.cpp" />
     <ClCompile Include="test_day8_2023.cpp" />
     <ClCompile Include="test_day9_2023.cpp" />
   </ItemGroup>

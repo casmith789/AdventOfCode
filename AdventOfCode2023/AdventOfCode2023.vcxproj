@@ -161,8 +161,10 @@
     <ClInclude Include="Day5_2023.h" />
     <ClInclude Include="Day6_2022.h" />
     <ClInclude Include="Day6_2023.h" />
+    <ClInclude Include="Day7_2022.h" />
     <ClInclude Include="Day7_2023.h" />
     <ClInclude Include="Day8_2023.h" />
+    <ClInclude Include="Day8_2022.h" />
     <ClInclude Include="Day9_2023.h" />
     <ClInclude Include="input_day10_2023.h" />
     <ClInclude Include="input_day11_2023.h" />
@@ -191,8 +193,10 @@
     <ClInclude Include="input_day5_2022.h" />
     <ClInclude Include="input_day5_2023.h" />
     <ClInclude Include="input_day6_2022.h" />
+    <ClInclude Include="input_day7_2022.h" />
     <ClInclude Include="input_day7_2023.h" />
     <ClInclude Include="input_day8_2023.h" />
+    <ClInclude Include="input_day8_2022.h" />
     <ClInclude Include="input_day9_2023.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>

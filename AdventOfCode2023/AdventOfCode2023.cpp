@@ -2,17 +2,14 @@
 //
 #pragma warning( disable : 6262 )
 #include <iostream>
-#include "Day11_2023.h"
-#include "input_day11_2023.h"
+#include "Day8_2022.h"
+#include "input_day8_2022.h"
 
 
 int main()
 {
-	Day11_2023 day11;
-	for (int i = 1; i < 1000; ++i)
-	{
-		std::cout << day11.findTotalDistance(day11.expandedInput(Input2023::day11_input, i)) << std::endl;
-	}
+	Day8_2022 day8;
+	day8.numTreesUncovered(Input2022::day8_input);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

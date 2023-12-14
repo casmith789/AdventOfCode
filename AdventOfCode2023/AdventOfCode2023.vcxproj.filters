@@ -215,5 +215,17 @@
     <ClInclude Include="Day6_2022.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day7_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day7_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day8_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input_day8_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

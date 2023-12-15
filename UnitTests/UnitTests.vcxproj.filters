@@ -101,6 +101,9 @@
     <ClCompile Include="test_day8_2022.cpp">
       <Filter>2022</Filter>
     </ClCompile>
+    <ClCompile Include="test_day9_2022.cpp">
+      <Filter>2022</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

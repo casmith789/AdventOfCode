@@ -30,6 +30,9 @@
     <ClCompile Include="input_day3_2022.h">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="input_day9_2022.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util.h">
@@ -225,6 +228,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="input_day8_2022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day9_2022.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

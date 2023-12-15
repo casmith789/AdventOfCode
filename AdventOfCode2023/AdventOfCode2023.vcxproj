@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="AdventOfCode2023.cpp" />
     <ClCompile Include="input_day3_2022.h" />
+    <ClCompile Include="input_day9_2022.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day10_2023.h" />
@@ -165,6 +166,7 @@
     <ClInclude Include="Day7_2023.h" />
     <ClInclude Include="Day8_2023.h" />
     <ClInclude Include="Day8_2022.h" />
+    <ClInclude Include="Day9_2022.h" />
     <ClInclude Include="Day9_2023.h" />
     <ClInclude Include="input_day10_2023.h" />
     <ClInclude Include="input_day11_2023.h" />

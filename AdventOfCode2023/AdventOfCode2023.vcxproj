@@ -173,7 +173,7 @@
     <ClInclude Include="input_day12_2023.h" />
     <ClInclude Include="input_day13_2023.h" />
     <ClInclude Include="input_day14_2023.h" />
-    <ClInclude Include="input_day15_2023.h" />
+    <ClInclude Include="input_day15_2023.txt" />
     <ClInclude Include="input_day16_2023.h" />
     <ClInclude Include="input_day17_2023.h" />
     <ClInclude Include="input_day18_2023.h" />

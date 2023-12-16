@@ -15,6 +15,11 @@ TEST(TestDay09_2022, Test1) {
     };
     Day9_2022 day9;
     EXPECT_EQ(1, 1);
-    EXPECT_EQ(day9.numTailPositions(example), 13);
-    EXPECT_EQ(day9.numTailPositions(Input2022::day9_input), 6212);
+    EXPECT_EQ(day9.numTailPositions(example, 1), 13);
+    EXPECT_EQ(day9.numTailPositions(Input2022::day9_input, 1), 6212);
+}
+
+TEST(TestDay09_2022, Test2) {
+    Day9_2022 day9;
+    EXPECT_EQ(day9.numTailPositions(Input2022::day9_input, 9), 2522);
 }

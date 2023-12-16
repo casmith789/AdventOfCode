@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <fstream>
 
 class Util
 {
@@ -82,5 +83,23 @@ public:
         }
         return result;
     }
+
+    static std::vector<std::string> readFile(std::string filename)
+    {
+        std::ifstream input(filename);
+        std::vector<std::string> lines;
+        for (std::string line; getline(input, line);)
+        {
+            lines.push_back(line);
+        }
+
+        return lines;
+    }
+
+    static bool stringContains(std::string string, std::string toContain)
+    {
+        return string.find(toContain) != std::string::npos;
+    }
+
 };
 

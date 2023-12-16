@@ -77,7 +77,7 @@
     <ClInclude Include="input_day14_2023.h">
       <Filter>Header Files\inputs</Filter>
     </ClInclude>
-    <ClInclude Include="input_day15_2023.h">
+    <ClInclude Include="input_day15_2023.txt">
       <Filter>Header Files\inputs</Filter>
     </ClInclude>
     <ClInclude Include="input_day16_2023.h">

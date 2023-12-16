@@ -12,12 +12,80 @@ public:
     Day9_2022() = default;
     ~Day9_2022() = default;
 
-    int numTailPositions(std::vector<std::string> input)
+    void getTailPosition(std::pair<int, int> headPosition, std::pair<int, int>& tailPosition, std::set<std::pair<int, int>>& tailPositions)
     {
-        std::set<std::pair<int, int>> tailPositions;
+        int difX = headPosition.first - tailPosition.first;
+        int difY = headPosition.second - tailPosition.second;
+        if (std::abs(difX) > 1 || std::abs(difY) > 1)
+        {
+            if (!difY)
+            {
+                if (headPosition.first > tailPosition.first)
+                {
+                    tailPosition.first = tailPosition.first + 1;
+                    tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+                }
+                else if (tailPosition.first > headPosition.first)
+                {
+                    tailPosition.first = tailPosition.first - 1;
+                    tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+                }
+            }
+            if (!difX)
+            {
+                if (headPosition.second > tailPosition.second)
+                {
+                    tailPosition.second = tailPosition.second + 1;
+                    tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+                }
+                else if (tailPosition.second > headPosition.second)
+                {
+                    tailPosition.second = tailPosition.second - 1;
+                    tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+                }
+            }
+            if (difX > 0 && difY > 0)
+            {
+                tailPosition.first = tailPosition.first + 1;
+                tailPosition.second = tailPosition.second + 1;
+                tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+            }
+            else if (difX < 0 && difY > 0)
+            {
+                tailPosition.first = tailPosition.first - 1;
+                tailPosition.second = tailPosition.second + 1;
+                tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+            }
+            else if (difX > 0 && difY < 0)
+            {
+                tailPosition.first = tailPosition.first + 1;
+                tailPosition.second = tailPosition.second - 1;
+                tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+            }
+            else if (difX < 0 && difY < 0)
+            {
+                tailPosition.first = tailPosition.first - 1;
+                tailPosition.second = tailPosition.second - 1;
+                tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
+            }
+        }
+    }
+
+
+    int numTailPositions(std::vector<std::string> input, int numTailPieces)
+    {
+        std::vector<std::set<std::pair<int, int>>> tailPositionsVec;
+        std::vector<std::pair<int, int>> tailPositions;
+        
         std::pair<int, int> headPosition = std::make_pair(0, 0);
         std::pair<int, int> tailPosition = std::make_pair(0, 0);
-        tailPositions.insert(tailPosition);
+        for (int i = 0; i < numTailPieces; ++i)
+        {
+            std::set<std::pair<int, int>> tailPositionsSet;
+            tailPositionsSet.insert(tailPosition);
+            tailPositions.push_back(tailPosition);
+            tailPositionsVec.push_back(tailPositionsSet);
+        }
 
         for (std::string line : input)
         {
@@ -46,67 +114,16 @@ public:
                     assert(false);
                 }
 
-                int difX = headPosition.first - tailPosition.first;
-                int difY = headPosition.second - tailPosition.second;
-                if (std::abs(difX) > 1 || std::abs(difY) > 1)
+                for (int i = 0; i < numTailPieces; ++i)
                 {
-                    if (!difY)
-                    {
-                        if (headPosition.first > tailPosition.first)
-                        {
-                            tailPosition.first = tailPosition.first + 1;
-                            tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                        }
-                        else if (tailPosition.first > headPosition.first)
-                        {
-                            tailPosition.first = tailPosition.first - 1;
-                            tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                        }
-                    }
-                    if (!difX)
-                    {
-                        if (headPosition.second > tailPosition.second)
-                        {
-                            tailPosition.second = tailPosition.second + 1;
-                            tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                        }
-                        else if (tailPosition.second > headPosition.second)
-                        {
-                            tailPosition.second = tailPosition.second - 1;
-                            tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                        }
-                    }
-                    if (difX > 0 && difY > 0)
-                    {
-                        tailPosition.first = tailPosition.first + 1;
-                        tailPosition.second = tailPosition.second + 1;
-                        tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                    }
-                    else if (difX < 0 && difY > 0)
-                    {
-                        tailPosition.first = tailPosition.first - 1;
-                        tailPosition.second = tailPosition.second + 1;
-                        tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                    }
-                    else if (difX > 0 && difY < 0)
-                    {
-                        tailPosition.first = tailPosition.first + 1;
-                        tailPosition.second = tailPosition.second - 1;
-                        tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                    }
-                    else if (difX < 0 && difY < 0)
-                    {
-                        tailPosition.first = tailPosition.first - 1;
-                        tailPosition.second = tailPosition.second - 1;
-                        tailPositions.insert(std::make_pair(tailPosition.first, tailPosition.second));
-                    }
+                    std::pair<int, int>& p1 = (i == 0) ? headPosition : tailPositions[i - 1];
+                    std::pair<int, int>& p2 = tailPositions[i];
+                    getTailPosition(p1, p2, tailPositionsVec[i]);
                 }
-
-
             }
 
         }
-        return tailPositions.size();
+        return tailPositionsVec[numTailPieces-1].size();
     }
 
 };
